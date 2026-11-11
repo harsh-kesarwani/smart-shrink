@@ -5,4 +5,4 @@ import json
 def service_list(request):
     with open("results.json", "r") as file:
         loaded_data = json.load(file)
-        return render(request, 'service_list.html', {'services': loaded_data})
+        return render(request, 'dashboard/service_list.html', {'services': loaded_data})

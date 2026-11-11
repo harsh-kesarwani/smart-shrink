@@ -1,6 +1,6 @@
 import configparser
 from datetime import datetime, timedelta
-from prometheus import (fetch_current_container_count, fetch_metric_data, calc,
+from prometheus_client import (fetch_current_container_count, fetch_metric_data, calc,
                         fetch_average_cpu_utilization_prom_query, fetch_average_memory_utilization_prom_query,
                         fetch_requested_cpu, fetch_requested_ram)
 import json
